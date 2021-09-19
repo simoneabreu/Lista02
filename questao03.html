@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+	  
+      <fieldset>
+	  
+      <title>Formulário</title>
+	
+      <style>
+         form {
+         /* Apenas para centralizar o form na página */
+         margin: 0 auto;
+         width: 600px;
+         /* Para ver as bordas do formulário */
+         padding: 2em;
+         border: px solid #CCC;
+         border-radius: 1em;
+         }
+         body{
+         background-color: Beige;
+         }
+
+
+         </style>
+		 
+         <style>
+           .nome 
+        {
+
+            float: left;
+        }
+
+         <style>
+         .campo 
+	{
+            float: right
+         }
+         </style>
+	
+   </head>
+   
+   <body>
+   
+      <form action="">
+	  
+         <fieldset>
+         <legend>Cadastro Geral</legend>
+         <br>
+         <fieldset class="nome">
+            <legend>Dados pessoais</legend>
+            <label for="name">Nome Completo:</label><br>
+            <input type="text" name="nome completo" id="nome completo" required>
+            <br>
+            <br>
+			
+            <div>
+               <label for="">Profissão</label>
+               <select required="required" name="profissão">
+                  <option select="select" value="">Sua profissão</option>
+                  <option value="1">Advogado</option>
+                  <option value="2">Zootecnista</option>
+                  <option value="3">Veterinário</option>
+                  <option value="4">Programador</option>
+               </select>
+            </div>
+			
+         </fieldset>
+         <div class="campo">
+            <fieldset class="Localização">
+	 
+               <legend>Localização</legend>
+               <label for="email">E-mail:</label><br>
+               <input type="email" name="email" id="email" class="inputcadastro" required><br>
+               <label for="rua" class="labelcadastro">Rua:</label><br>
+               <input type="text" name="rua" id="rua" class="inputcadastro" required>
+	 
+            </fieldset>
+         </div>
+         <fieldset>
+            <legend>Faixa etária</legend>
+            <label for="faixaetaria" ><input name="ft" value="t" type="radio" required>mais de 20 anos</label><br>
+            <label for="faixaetaria" ><input name="ft" value="id" type="radio" required>mais de 20 até 30 anos</label><br>
+            <label for="faixaetaria" ><input name="ft" value="a" type="radio" required>mais de 30  até 40 anos</label><br>
+            <label for="faixaetaria" ><input name="ft" value="a" type="radio" required>mais de 40 até 50 anos</label><br>
+            <label for="faixaetaria" ><input name="ft" value="a" type="radio" required>mais de 50  até 50 anos</label><br>
+            <label for="faixaetaria" ><input name="ft" value="a" type="radio" required>mais de 60 anos</label><br>
+           
+         </fieldset>
+	
+         <div>
+		 
+            <fieldset>
+			
+               <legend>Esportes que pratica</legend>
+	       <input type="checkbox" name="esporte" id="fc" value="Futebol de Campo">
+	      <label for="fc">Futebol de Campo</label><br>
+	      <input type="checkbox" name="esporte" id="fs" value="Futebol de salão">
+	      <label for="fs">Futebol de salão</label><br>
+              <input type="checkbox" name="esporte" id="fsc" value="Futebol society">
+	      <label for="fsc">Futebol society</label><br>	
+              <input type="checkbox" name="esporte" id="vq" value="Volley de quadra">
+	      <label for="vq">Volley de quadra</label><br>
+              <input type="checkbox" name="esporte" id="vp" value="Volley de praia">
+	      <label for="vp">Volley de praia</label><br>
+	      <input type="checkbox" name="esporte" id="np" value="Natação em piscina">
+	      <label for="np">Natação em piscina</label><br>
+	      <input type="checkbox" name="esporte" id="nm" value="Natação em mar aberto">
+	      <label for="nm">Natação em mar aberto</label><br>
+		  
+            </fieldset>
+			
+         </div>
+         </fieldset>
+         <div>
+            <fieldset>
+               <legend>Comentário</legend>
+               <label for>Mensagem:</label><br>
+               <textarea name="Comentário" required="required" cols="35" rows="5"></textarea>
+            </fieldset>
+         </div>
+         <div class="button">
+            <button  name="enviar" value="1" type="submit">Enviar</button>
+            <button  name="limpar" value="1" type="submit">Limpar</button>
+         </div>
+   </body>
+   </form>
+</html>

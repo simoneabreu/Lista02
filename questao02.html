@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv= "X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formulário</title>
+      <style>
+         fieldset
+         {
+         width:500px;
+         }
+         legend
+         {
+         text-align: center;
+         }
+         .inputcadastro{
+         width:600px;
+         }
+         float: left;
+         .labelcadastro{
+         width:150px;
+         }
+         input[type=submit]{
+         display: block;
+         background-color: green;
+         height: 30px;
+         border: 4px;
+         outline: 0;
+         cursor: pointer;
+         width: 100px;
+         margin-right: 0;
+         margin-right:auto;	
+         border-radius: 15px;
+         }
+         textarea{
+         line-height: 40px;
+         padding: 30px;
+         height: 100px;
+         resize: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <form action="">
+         <fieldset>
+            <label for="name">Nome </label>
+            <input type="text" name = "nome" id="nome" required>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <div>
+               <label for="text">Tipo</label>
+               <label for="" ><input name="tipo" value="t" type="radio" required>Técnico</label>
+               <label for="" ><input name="tipo" value="p" type="radio" required>Professor</label>
+               <label for="" ><input name="tipo" value="a" type="radio" required>Aluno</label>
+            </div>
+            <label for="text">Setor de Interesse</label>
+            <input type="checkbox" id="Financeiro" name="Interesse" value="Interesse" required >
+            <label for="Financeiro">Financeiro</label>
+            <input type="checkbox" id="Informática" name="Interesse" value="Informática" required >
+            <label for="Informática">Informática</label>
+            <input type="checkbox" id="Recursos Humanos" name="Interesse" value="Recursos Humanos" required >
+            <label for="Informática">Recursos Humanos</label>
+            <br>
+            <label for="solicitação">Solicitação:</label>
+            <br>
+            <textarea name="solicitação" id="Solicitação"  cols ="20" required></textarea>
+            <br>
+            <input type="submit" name="acao" value="Enviar">
+         </fieldset>
+      </form>
+   </body>
+</html>
